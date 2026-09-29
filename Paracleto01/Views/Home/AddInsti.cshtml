@@ -1,0 +1,153 @@
+﻿
+
+<main class="app-main">
+	<div class="app-topbar">
+        <div>
+            <h2>Instituição</h2>
+            <div class="who">Informações gerais da escola</div>
+        </div>
+        <button class="btn btn-accent">Editar informações</button>
+    </div>
+
+    <div class="panel">
+        <div class="panel-head">
+            <h3>Colégio Parakletos</h3>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="k">Localidade</div>
+                <div class="v">Luanda, Angola</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Ano de fundação</div>
+                <div class="v">1986</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Telefone</div>
+                <div class="v">+244 222 700 000</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Email</div>
+                <div class="v">secretaria@epdd.ao</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Morada</div>
+                <div class="v">Rua da Cooperação, 287</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Anos de escolaridade</div>
+                <div class="v">1º – 12º</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Alunos matriculados</div>
+                <div class="v">1.240+</div>
+            </div>
+            <div class="info-item">
+                <div class="k">Corpo docente</div>
+                <div class="v">96 professores</div>
+            </div>
+        </div>
+    </div>
+
+         <div class="panel">
+            <div class="panel-head">
+                <h3>Sobre a escola</h3>
+            </div>
+            <p style="font-size:14px;color:var(--ink-700);line-height:1.7;">
+                Seguimos os programas e o calendário escolar em vigor em Portugal,
+                com professores certificados pelo Ministério da Educação português, 
+                acolhendo alunos portugueses, angolanos e de outras nacionalidades.
+            </p>
+          </div>
+</main>
+
+<div id="modal-root">
+		<div class="modal-backdrop">
+			<div class="modal">
+				<div class="modal-head">
+					<div>
+						<h3>Editar informações da instituição</h3>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AdmInsti"> 
+					    <button class="modal-close" onclick="#">✕</button>
+					</a>
+				</div>
+				<div class="modal-sub">Estes dados alimentam o site público da escola.</div>
+				<form>
+					<div class="grid-2">
+                        <div class="field">
+                            <label>Nome da escola</label>
+                            <input name="name" required="" placeholder="Colégio Parakleto" required=" value="">
+                        </div>
+                        <div class="field">
+                            <label>Localidade</label>
+                            <input name="place" required="" value="" placeholder="Luanda, Angola">
+                        </div>
+                    </div>
+
+                        <div class="grid-3">
+                            <div class="field">
+                                <label>Telefone</label>
+                                <input name="telefone" required="" value="" placeholder="+244 932 700 000">
+                            </div>
+                            <div class="field">
+                                <label>Email</label>
+                                <input name="email" type="email" required="" value="" placeholder="secretaria@epdd.ao">
+                            </div>
+                            <div class="field">
+                                <label>NIF</label>
+                                <input name="nif" required="" value="" placeholder="identificação fiscal">
+                            </div>
+                        </div>
+
+                        <div class="grid-3">
+                            <div class="field">
+                                <label>Repartição Fiscal</label>
+                                <input name="reparfiscal" required="" value="" placeholder="">
+                            </div>
+                            <div class="field">
+                                <label>Regime de Imposto</label>
+                                <input name="imposto" required="" value="" placeholder="">
+                            </div>
+                            <div class="field">
+                                <label>Regime de Iva</label>
+                                <input name="iva" required="" value="" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="grid-2">
+                        <div class="field">
+                            <label>Cae</label>
+                            <input name="cae" required="" placeholder="" required=" value="">
+                        </div>
+                        <div class="field">
+                            <label>Logotipo</label>
+                            <input name="logo" type="file">
+                        </div>
+                         </div>
+   
+
+                        <div class="field">
+                            <label>Anos de escolaridade</label>
+                            <input name="anosEscolaridade" required="" placeholder="1º – 9º">
+                        </div>
+
+                        <div class="field">
+                            <label>Descrição — Sobre nós</label>
+                            <textarea name="descricaoSobre" rows="4" required="">Seguimos os programas e o calendário escolar em vigor em Portugal, com professores certificados pelo Ministério da Educação português,  acolhendo alunos portugueses, angolanos e de outras nacionalidades.
+                                </textarea>
+                        </div>
+
+                        <div class="modal-actions">
+                            <a asp-area="" asp-controller="Home" asp-action="AdmInsti">
+                                <button type="button" class="btn btn-ghost" onclick="closeModal()" >Cancelar</button>
+                            </a>
+                            <button type="submit" class="btn btn-accent">Guardar alterações</button>
+                        </div>
+                    
+				</form>
+			</div>
+
+		</div>
+	</div>

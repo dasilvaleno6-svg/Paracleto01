@@ -1,0 +1,67 @@
+﻿
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Propinas</h2>
+						<div class="who">Gestão de pagamentos e mensalidades</div>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AddPropina">
+						<button class="btn btn-accent">+ Novo Pagamento</button>
+					</a>
+				 </div>
+
+				 <div class="metric-grid">
+					 <div class="metric">
+						 <div class="lbl">Registos totais</div>
+						 <div class="val">5</div>
+					 </div>
+					 <div class="metric">
+						 <div class="lbl">Pagamentos pendentes</div>
+						 <div class="val">3</div>
+					 </div>
+					 <div class="metric">
+						 <div class="lbl">Referência mais recente</div>
+						 <div class="val">Novembro 2026</div>
+					 </div>
+				 </div>
+
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Registro de Pagamentos</h3>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr><th>Aluno</th><th>Referência</th><th>Valor</th><th>Data pagamento</th><th>Ações</th></tr>
+
+								<tr>
+								  <td>Beatriz Fernandes Costa</td><td>Setembro 2026</td><td>185.000 Kz</td>
+
+								  <td>05/09/2026</td>
+								  <td>
+									<div class="actions-cell">
+									  <a class="link-blue" >Ver recibo</a>
+									  <a class="link-accent">Ver histórico</a>
+									</div>
+								  </td>
+								</tr>
+
+								<tr>
+								  <td>Beatriz Fernandes Costa</td><td>Novembro 2026</td><td>185.000 Kz</td>
+								  <td>—</td>
+								  <td>
+									<div class="actions-cell">
+									  <a class="link-blue" >Ver recibo</a>
+									  <a class="link-accent">Ver histórico</a>
+									</div>
+								  </td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			  
+
+			</main>
+		

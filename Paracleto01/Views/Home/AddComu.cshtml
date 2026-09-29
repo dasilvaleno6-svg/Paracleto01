@@ -1,0 +1,91 @@
+﻿
+
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Comunicados</h2>
+						<div class="who">Informações para alunos e encarregados de educação</div>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AddComu">
+						<button class="btn btn-accent" onclick="#">+ Novo Comunicado</button>
+					</a>
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Início do Ano Letivo 2026/2027</h3>
+						<span class="badge badge-blue">Todos</span>
+					</div>
+					<p style="font-size:13.5px;color:var(--ink-500);line-height:1.6;">
+						As aulas iniciam no dia 1 de setembro. Pedimos pontualidade na entrega dos materiais escolares.
+					</p>
+					<p style="font-size:12px;color:var(--ink-300);margin-top:10px;">
+						Publicado a 28/08/2026
+					</p>
+				</div>
+				<div class="panel" style="margin-bottom:14px;">
+				  <div class="panel-head">
+					  <h3>Calendário de Avaliações — 1º Período</h3>
+					  <span class="badge badge-blue">Encarregados de Educação</span>
+				  </div>
+				  <p style="font-size:13.5px;color:var(--ink-500);line-height:1.6;">
+					  O calendário de testes do 1º período já está disponível na secretaria.
+				  </p>
+				  <p style="font-size:12px;color:var(--ink-300);margin-top:10px;">
+					  Publicado a 20/08/2026
+				  </p>
+				</div>
+			  
+
+			</main>
+		</div>
+	</div>
+
+	<div id="modal-root">
+		<div class="modal-backdrop">
+			<div class="modal">
+				<div class="modal-head">
+					<div>
+						<h3>Novo comunicado</h3>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AdmComu"> 
+					<button class="modal-close" onclick="#">✕</button>
+					</a>
+				</div>
+				<div class="modal-sub">Publique uma informação para a comunidade escolar.</div>
+				<form>
+
+					<div class="field">
+						<label>Título</label>
+						<input name="titulo" required="">
+					</div>
+
+					<div class="field">
+						<label>Destinatário</label>
+						<select name="destino">
+							<option>Todos</option>
+							<option>Encarregados de Educação</option>
+							<option>Alunos</option>
+							<option>Turma específica</option>
+						</select>
+					</div>
+
+					<div class="field">
+						<label>Mensagem</label>
+						<textarea name="msg" rows="4" required=""></textarea>
+					</div>
+
+					<div class="modal-actions">
+						<a asp-area="" asp-controller="Home" asp-action="AdmComu">
+							<button type="button" class="btn btn-ghost">Cancelar</button>
+						</a>
+						<button type="submit" class="btn btn-accent">Publicar comunicado</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+

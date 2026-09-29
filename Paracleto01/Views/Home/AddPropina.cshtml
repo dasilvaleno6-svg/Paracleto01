@@ -1,0 +1,131 @@
+﻿
+
+
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Propinas</h2>
+						<div class="who">Gestão de pagamentos e mensalidades</div>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AddPropina">
+						<button class="btn btn-accent">+ Lançar propina</button>
+					</a>
+				 </div>
+
+				 <div class="metric-grid">
+					 <div class="metric">
+						 <div class="lbl">Registos totais</div>
+						 <div class="val">5</div>
+					 </div>
+					 <div class="metric">
+						 <div class="lbl">Pagamentos pendentes</div>
+						 <div class="val">3</div>
+					 </div>
+					 <div class="metric">
+						 <div class="lbl">Referência mais recente</div>
+						 <div class="val">Novembro 2026</div>
+					 </div>
+				 </div>
+
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Registro de Pagamentos</h3>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr><th>Aluno</th><th>Referência</th><th>Valor</th><th>Estado</th><th>Data pagamento</th><th>Ações</th></tr>
+
+								<tr>
+								  <td>Beatriz Fernandes Costa</td><td>Setembro 2026</td><td>185.000 Kz</td>
+								  <td><span class="badge badge-paid">Pago</span></td>
+								  <td>05/09/2026</td>
+								  <td>
+									<div class="actions-cell">
+									  <a class="link-blue" >Ver recibo</a>
+									</div>
+								  </td>
+								</tr>
+
+								<tr>
+								  <td>Beatriz Fernandes Costa</td><td>Novembro 2026</td><td>185.000 Kz</td>
+								  <td><span class="badge badge-pending">Pendente</span></td>
+								  <td>—</td>
+								  <td>
+									<div class="actions-cell">
+									  <a class="link-blue" >Ver recibo</a>
+									  <a class="link-accent">Marcar como pago</a>
+									</div>
+								  </td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			  
+
+			</main>
+		</div>
+	</div>
+
+	<div id="modal-root">
+		<div class="modal-backdrop">
+			<div class="modal">
+				<div class="modal-head">
+					<div>
+						<h3>Lançar Propina</h3>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AdmPropina"> 
+					<button class="modal-close" onclick="#">✕</button>
+					</a>
+				</div>
+				<div class="modal-sub">Registrar um novo pagamento.</div>
+				<form>
+
+					<div class="field">
+						<label>Aluno</label>
+						<input name="nome" required="" value="" placeholder="Pesquisar por Nome">
+					</div>
+		
+					<div class="grid-2">
+					  <div class="field">
+						  <label>Mês a Pagar</label>
+						  <select name="QtdMes">
+									<option value="">1 Mês</option>
+									<option value="">2 Meses</option>
+									<option value="">3 Meses</option>
+									<option value="">4 Meses</option>
+									<option value="">5 Meses</option>
+									<option value="">6 Meses</option>
+									<option value="">7 Meses</option>
+									<option value="">8 Meses</option>
+									<option value="">9 Meses</option>
+									<option value="">10 Meses</option>
+						 </select>
+					  </div>
+					  <div class="field">
+						  <label>Valor</label>
+						  <input name="valor" required="" placeholder="Ex: 185.000 Kz">
+					  </div>
+					</div>
+
+					<div class="field">
+						<label>Observações</label>
+						<input name="obs" required="" value="" placeholder="">
+					</div>
+
+					<div class="modal-actions">
+						<a asp-area="" asp-controller="Home" asp-action="AdmPropina">
+						  <button type="button" class="btn btn-ghost" onclick="">Cancelar</button>
+						</a>
+						  <button type="submit" class="btn btn-accent">Finalizar Pagamento</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+
+

@@ -1,0 +1,112 @@
+﻿
+
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Professor</h2>
+						<div class="who">3 Professores non Corpo docente</div>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AddProf">
+						<button class="btn btn-accent" onclick="#">+ Novo Professor</button>
+					</a>
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Lista de Professores</h3>
+						<div class="panel-toolbar">
+							<input type="text" placeholder="Pesquisar por nome ou disciplina…" value="" oninput="#">
+						</div>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr><th>Nome</th><th>Disciplina</th><th>Turmas</th><th>Contacto</th><th>Ações</th></tr>
+								<tr>
+								  <td>Prof. Carlos Mendes</td>
+								  <td>Matemática</td>
+								  <td>9ºA, 9ºB, 11ºB</td>
+								  <td>+244 924 111 222</td>
+								  <td>
+									<div class="actions-cell">
+									  <a class="link-blue" >Ver ficha</a>
+									  <a class="link-accent" >Editar</a>
+									  <a class="link-red" >Eliminar</a>
+									</div>
+								  </td>
+								</tr>
+
+								<tr>
+								  <td>Prof. Carlos Mendes</td>
+								  <td>Matemática</td>
+								  <td>9ºA, 9ºB, 11ºB</td>
+								  <td>+244 924 111 222</td>
+								  <td>
+									<div class="actions-cell">
+									  <a class="link-blue" >Ver ficha</a>
+									  <a class="link-accent" >Editar</a>
+									  <a class="link-red" >Eliminar</a>
+									</div>
+								  </td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			  
+
+			</main>
+		</div>
+	</div>
+
+	<div id="modal-root">
+		<div class="modal-backdrop">
+			<div class="modal">
+				<div class="modal-head">
+					<div>
+						<h3>Novo Professor</h3>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AdmProf"> 
+					<button class="modal-close" onclick="#">✕</button>
+					</a>
+				</div>
+				<div class="modal-sub">Preencha os dados para registrar um novo docente.</div>
+				<form>
+					<div class="grid-2">
+					  <div class="field">
+						  <label>Nome completo</label>
+						  <input name="nome" required="" value="">
+					  </div>
+					  <div class="field">
+						  <label>Disciplina</label>
+						  <input name="disciplina" required="" value="">
+					  </div>
+					</div>
+					<div class="field">
+						<label>Turmas atribuídas</label>
+						<input name="turmas" required="" value="" placeholder="Ex: 9ºA, 10ºB">
+					</div>
+					<div class="grid-2">
+					  <div class="field">
+						  <label>Contacto</label>
+						  <input name="contacto" required="" value="">
+					  </div>
+					  <div class="field">
+						  <label>Email</label>
+						  <input name="email" type="email" required="" value="">
+					  </div>
+					</div>
+
+					<div class="modal-actions">
+						<a asp-area="" asp-controller="Home" asp-action="AdmProf">
+						  <button type="button" class="btn btn-ghost" onclick="">Cancelar</button>
+						</a>
+						  <button type="submit" class="btn btn-accent">Registar Professor</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+
+

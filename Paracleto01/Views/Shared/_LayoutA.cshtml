@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Paracleto01</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/css/AdmAluno.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/Admin.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Paracleto01.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="app">
+		<div class="app-shell">
+			<aside class="sidebar">
+				<div class="sb-brand">
+					<div class="crest">
+
+					</div>
+					<div>
+						<div class="name">Colégio Parakletos</div>
+						<div class="role">Painel do Aluno</div>
+					</div>
+				</div>
+					<a class="sb-link" asp-area="" asp-controller="Home" asp-action="IndexA">
+						<span class="ic">🗂️</span>
+						Painel geral
+					</a>
+				<div class="sb-section">Actividades</div>
+
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AluNota">
+					<span class="ic">🎓</span>
+					As Minhas Notas
+				</a>
+
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AluProp">
+					<span class="ic">📝</span>
+					Propina
+				</a>
+
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AluReun">
+					<span class="ic">📅</span>
+					Reuniões e Saidas
+				</a>
+
+			
+				<div class="sb-logout">
+					<a class="sb-link" asp-area="" asp-controller="Home" asp-action="Index">
+						<span class="ic">↩︎</span>
+						Sair
+					</a>
+				</div>
+
+			</aside>
+	 
+   
+			<main class="app-main">
+      
+					@RenderBody()
+        
+			</main>
+  
+   
+		</div>
+	</div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

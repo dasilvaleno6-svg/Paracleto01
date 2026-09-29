@@ -1,0 +1,112 @@
+﻿
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Emonumentos</h2>
+						<div class="who">Matrícula, seguro escolar, certificados e outras taxas</div>
+					</div>
+					<div class="btn-em2">					
+						<a asp-area="" asp-controller="Home" asp-action="AddEmonu">
+							<button class="btn btn-outline">+ Novo tipo</button>
+						</a>
+						<a asp-area="" asp-controller="Home" asp-action="LanEmonu">
+							<button class="btn btn-accent" onclick="#">+ Lançar emonumento</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="metric-grid">
+					 <div class="metric">
+						 <div class="lbl">Tipos de emonumentos</div>
+						 <div class="val">5</div>
+					 </div>
+					 <div class="metric">
+						 <div class="lbl">Registos Totais</div>
+						 <div class="val">3</div>
+					 </div>
+					 <div class="metric">
+						 <div class="lbl">Pagamento pendentes</div>
+						 <div class="val">3</div>
+					 </div>
+				 </div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Lista de alunos</h3>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr>
+									<th>Aluno</th>
+									<th>Tipo</th>
+									<th>Valor</th>
+									<th>Estado</th>
+									<th>Data</th>
+									<th></th>
+								</tr>
+								<tr>
+								  <td>Beatriz Fernandes Costa</td><td>Matrícula</td><td>45.000 Kz</td>
+								  <td><span class="badge badge-paid">Pago</span></td>
+								  <td>01/09/2026</td>
+								  <td>—</td>
+								</tr>
+								<tr>
+								  <td>Tiago Nunes Almeida</td><td>Seguro escolar</td><td>12.000 Kz</td>
+								  <td><span class="badge badge-pending">Pendente</span></td>
+								  <td>—</td>
+								  <td>
+									  <a class="link-blue">Marcar como pago</a>
+								  </td>
+								</tr>
+								<tr>
+								  <td>Inês Rodrigues Pinto</td><td>Cartão de aluno</td><td>5.000 Kz</td>
+								  <td><span class="badge badge-pending">Pendente</span></td>
+								  <td>—</td>
+								  <td>
+									  <a class="link-blue">Marcar como pago</a>
+								  </td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Tabela de Emonumento (Catálogo) </h3>
+					</div>
+
+					<table>
+						<tbody>
+							<tr>
+								<th>Tipo</th>
+								<th>Valor</th>
+							</tr>
+							<tr>
+								<td>Matrícula</td>
+								<td>45.000 Kz</td>
+							</tr>
+							<tr>
+								<td>Seguro escolar</td>
+								<td>12.000 Kz</td>
+							</tr>
+							<tr>
+								<td>Cartão de aluno</td>
+								<td>5.000 Kz</td>
+							</tr>
+							<tr>
+								<td>Certificado / Diploma</td>
+								<td>8.000 Kz</td>
+							</tr>
+							<tr>
+								<td>Exame de equivalência</td>
+								<td>20.000 Kz</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			  
+
+			</main>
+	

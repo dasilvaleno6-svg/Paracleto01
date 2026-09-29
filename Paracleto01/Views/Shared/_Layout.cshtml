@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Paracleto01</title>
+    <script src="~/js/site.js" 
+	asp-append-version="true"></script>
+    <link rel="stylesheet" href="~/css/AdmAluno.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/Admin.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Paracleto01.styles.css" asp-append-version="true" />
+</head>
+<body>
+
+    <div class="app">
+		<div class="app-shell">
+			<aside class="sidebar">
+				<div class="sb-brand">
+					<div class="crest">
+
+					</div>
+					<div>
+						<div class="name">Colégio Parakletos</div>
+						<div class="role">Painel administrativo</div>
+					</div>
+				</div>
+					<a class="sb-link" asp-area="" asp-controller="Home" asp-action="Admin">
+						<span class="ic">🗂️</span>
+						Painel geral
+					</a>
+				<div class="sb-section">Pessoas</div>
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AdmAluno">
+					<span class="ic">🎓</span>
+					Aluno
+				</a>
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AdmProf">
+					<span class="ic">📘</span>
+					Professores
+				</a>
+				<div class="sb-section">Financeiro</div>
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AdmPropina">
+					<span class="ic">💳</span>
+					Propinas
+				</a>
+				<a class="sb-link" asp-area="" asp-controller="Home" asp-action="AdmEmonu">
+					<span class="ic">🧾</span>
+					Emonumentos
+				</a>
+				<div class="sb-section">Vida escolar</div>
+				<a class="sb-link"asp-area="" asp-controller="Home" asp-action="AdmCalen">
+					<span class="ic">📝</span>
+					Calendário de provas
+				</a>
+				<a class="sb-link " asp-area=" " asp-controller="Home" asp-action="AdmReun">
+					<span class="ic">📅</span>
+					Reuniões e eventos
+				</a>
+				<a class="sb-link" asp-area=" " asp-controller="Home" asp-action="AdmComu">
+					<span class="ic">📣</span>
+					Comunicados
+				</a>
+				<div class="sb-section">Escola</div>
+				<a class="sb-link" asp-area=" " asp-controller="Home" asp-action="AdmInsti">
+					<span class="ic">🏫</span>
+					Instituição
+				</a>
+				<div class="sb-logout">
+					<a class="sb-link" asp-area="" asp-controller="Home" asp-action="Index">
+						<span class="ic">↩︎</span>
+						Sair
+					</a>
+				</div>
+			</aside>
+	 
+   
+			<main class="app-main">
+      
+					@RenderBody()
+        
+			</main>
+  
+   
+		</div>
+	</div>
+
+   
+    <script src="~/js/site.js" 
+	asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

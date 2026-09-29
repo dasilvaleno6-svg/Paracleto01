@@ -1,0 +1,60 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Paracleto01</title>
+	<script type="importmap"></script>
+	<link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Paracleto01.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+
+	<div class="app">
+		<div class="login-wrap">
+			<div class="login-box">
+				<h3 style="text-align:center;margin-top:14px;font-size:20px;">Colégio Parakletos</h3>
+				<p style="text-align:center;color:var(--ink-500);font-size:13.5px;margin-top:6px;">Escolha o tipo de acesso</p>
+				<div class="role-pick">
+				  
+					<button class="role-card">
+						<a asp-area="" asp-controller="Home" asp-action="Admin">
+							<div class="ic">🗂️</div>
+							<div class="t">Administrador</div>
+						</a>
+					</button>
+				 
+					<button class="role-card">
+						<a asp-area="" asp-controller="Home" asp-action="IndexP">
+							<div class="ic">📘</div>
+							<div class="t">Docente</div>
+						</a>
+					</button>
+				  
+				  
+					<button class="role-card">
+						<a asp-area="" asp-controller="Home" asp-action="IndexA">
+							<div class="ic">🎓</div>
+							<div class="t">Aluno</div>
+						</a>
+					</button>
+				  
+				</div>
+
+				<div style="text-align:center;margin-top:20px;">
+					<a style="font-size:13px;color:var(--ink-500);" asp-area="" asp-controller="Home" asp-action="Index">← Voltar ao site</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

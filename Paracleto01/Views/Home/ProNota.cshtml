@@ -1,0 +1,103 @@
+﻿
+
+ @{
+     Layout = "_LayoutP";
+   }
+
+    <main class="app-main">
+
+				<div class="app-topbar">
+					<h2>Lançar Nota</h2>
+					<div class="who">Bem-vindo(a), Carissimo Docente</div>
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						  <h3>Novo lançamento</h3>
+					</div>
+
+					<form>
+					<div class="grid-3">
+
+						<div class="field">
+							<label>Aluno</label>
+							<input name="aluno" placeholder="Pesquisa por nome ou turma" required="">
+						</div>
+
+						<div class="field">
+							<label>Classe</label>
+							<select name="Classe">
+								<option value="">Iniciação</option>
+								<option value="">1ª Classe</option>
+								<option value="">2º Classe</option>
+								<option value="">3ª Classe</option>
+								<option value="">4º Classe</option>
+								<option value="">5ª Classe</option>
+								<option value="">6º Classe</option>
+								<option value="">7ª Classe</option>
+								<option value="">8º Classe</option>
+								<option value="">9ª Classe</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<label>Disciplina</label>
+							<input name="disciplina" value="Matemática" readonly="">
+						</div>
+						
+					</div>
+
+					<div class="grid-3">
+
+						<div class="field">
+							<label>Trimestre</label>
+							<select name="Trimestre">
+								<option>1º Trimestre</option>
+								<option>2º Trimestre</option>
+								<option>3º Trimestre</option>
+							</select>
+						</div>
+
+						<div class="field">
+							<label>Nota (0–20)</label>
+							<input name="nota" type="number" min="0" max="20" required="">
+						</div>
+
+						<div class="field">
+							<label>Observações</label>
+							<input name="obs" placeholder="Opcional">
+						</div>
+
+					</div>
+
+					<button class="btn btn-accent" type="submit">Lançar nota</button>
+				</form>
+
+			</div>
+
+			<div class="panel">
+				<div class="panel-head">
+					<h3>Notas lançadas por si</h3>
+				</div>
+				<table>
+					<tbody>
+						<tr>
+							<th>Aluno</th>
+							<th>Período</th>
+							<th>Nota</th>
+							<th>Observações</th>
+						</tr>
+						<tr>
+							<td>Beatriz Fernandes Costa</td>
+							<td>1º Período</td>
+							<td>
+								<b style="color:var(--blue-800)">16</b> / 20
+							</td>
+							<td>Bom desempenho</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+				
+	</main>

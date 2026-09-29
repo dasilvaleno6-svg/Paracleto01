@@ -1,0 +1,194 @@
+﻿
+:root {
+    --blue-900: #0B2545;
+    --blue-800: #0F2F58;
+    --blue-700: #123A6B;
+    --blue-600: #1B4F8C;
+    --blue-500: #2A66AC;
+    --blue-100: #E6EEF7;
+    --blue-50: #F3F7FC;
+    --acc-900: #7A5200;
+    --acc-700: #B98600;
+    --acc-600: #F2B705;
+    --acc-500: #F7C948;
+    --acc-100: #FFF2CC;
+    --acc-50: #FFFBEF;
+    --red-600: #C8102E;
+    --red-100: #FBE4E7;
+    --white: #FFFFFF;
+    --paper: #F6F8FB;
+    --ink-900: #152238;
+    --ink-700: #3A4A63;
+    --ink-500: #63728A;
+    --ink-300: #9AA8BE;
+    --border: #E1E7F0;
+    --radius: 10px;
+    --shadow: 0 1px 2px rgba(11, 37, 69, 0.06), 0 8px 24px rgba(11, 37, 69, 0.06);
+    --font-display: Cambria;
+    --font-body: 'Inter', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 11px 20px;
+}
+
+* {
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--ink-900);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+}
+
+.login-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue-900);
+    padding: 0px;
+}
+   
+.login-wrap::before {
+        content: "";
+    }
+
+.login-box {
+    background: var(--white);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    padding: 38px;
+    box-shadow: var(--shadow);
+}
+
+
+.login-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.login-brand .name {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 18px;
+        color: var(--blue-900);
+        margin-top: 12px;
+}
+
+.crest {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+.login-brand .sub {
+    font-size: 11.5px;
+    color: var(--acc-900);
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.field {
+    margin-bottom: 14px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-700);
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--ink-900);
+    background: var(--white);
+}
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--blue-900);
+    color: var(--white);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border-radius: 8px;
+    border: 1.5px solid transparent;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all .15s ease;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.demo-note {
+    margin-top: 16px;
+    background: var(--blue-50);
+    border: 1px solid var(--blue-100);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12.5px;
+    color: var(--blue-700);
+    line-height: 1.5;
+}
+
+.role-pick {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-top: 26px;
+}
+
+
+.role-card {
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 14px;
+    text-align: center;
+    background: var(--paper);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}

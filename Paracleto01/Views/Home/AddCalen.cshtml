@@ -1,0 +1,145 @@
+﻿
+
+
+
+
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Calendário de provas</h2>
+						<div class="who">Testes, exames e trabalhos avaliativos</div>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AddCalen">
+						<button class="btn btn-accent" onclick="#">+ Marcar Prova</button>
+					</a>
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Provas Marcadas</h3>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr>
+									<th>Data</th>
+									<th>Disciplina</th>
+									<th>Turma</th>
+									<th>Tipo</th>
+									<th>Período</th>
+									<th>Obs.</th>
+									<th></th>
+								</tr>
+    
+								<tr>
+								  <td>14/10/2026</td>
+								  <td>Matemática</td>
+								  <td>9ºA</td>
+								  <td>
+									  <span class="badge badge-blue">Teste</span>
+								  </td>
+								  <td>1º Período</td>
+								  <td>Capítulos 1 a 3</td>
+								  <td>
+									  <a class="link-red">Remover</a>
+								  </td>
+								</tr>
+								<tr>
+								  <td>20/10/2026</td>
+								  <td>Física e Química</td>
+								  <td>11ºB</td>
+								  <td>
+									  <span class="badge badge-blue">Teste</span>
+								  </td>
+								  <td>1º Período</td>
+								  <td>—</td>
+								  <td>
+									  <a class="link-red">Remover</a>
+								  </td>
+								</tr>
+								<tr>
+								  <td>27/10/2026</td>
+								  <td>Português</td>
+								  <td>6ºC</td>
+								  <td>
+									  <span class="badge badge-blue">Trabalho</span>
+								  </td>
+								  <td>1º Período</td>
+								  <td>Entrega de ensaio</td>
+								  <td>
+									  <a class="link-red">Remover</a>
+								  </td>
+								</tr>
+							</tbody>
+						</table>
+					
+					</form>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	
+	<div id="modal-root">
+		<div class="modal-backdrop">
+			<div class="modal">
+				<div class="modal-head">
+					<div>
+						<h3>Marcar nova prova</h3>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AdmCalen"> 
+					<button class="modal-close" onclick="#">✕</button>
+					</a>
+				</div>
+				<div class="modal-sub">Adicione um teste, exame ou trabalho ao calendário.</div>
+				<form>
+					  <div class="grid-2">
+						<div class="field">
+							<label>Disciplina</label>
+							<input name="disciplina" required="" placeholder="Ex: Matemática">
+						</div>
+						<div class="field">
+							<label>Turma</label>
+							<input name="turma" required="" placeholder="Ex: 9ºA">
+						</div>
+					  </div>
+					  <div class="grid-2">
+						<div class="field">
+							<label>Data</label>
+							<input name="data" type="date" required="">
+					    </div>
+						<div class="field">
+							<label>Tipo</label>
+							<select name="tipo">
+								<option>Teste</option>
+								<option>Exame</option>
+								<option>Trabalho</option>
+							</select>
+					   </div>
+					  </div>
+					  <div class="grid-2">
+						<div class="field">
+							<label>Período</label>
+							<select name="periodo">
+								<option>1º Período</option>
+								<option>2º Período</option>
+								<option>3º Período</option>
+							</select>
+						</div>
+						<div class="field">
+							<label>Observações</label>
+							<input name="obs" placeholder="Opcional">
+						</div>
+					  </div>
+					  <div class="modal-actions">
+						<a asp-area="" asp-controller="Home" asp-action="AdmCalen">
+							<button type="button" class="btn btn-ghost">Cancelar</button>
+						</a>
+						<button type="submit" class="btn btn-accent">Marcar prova</button>
+					  </div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+

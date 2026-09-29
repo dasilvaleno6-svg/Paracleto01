@@ -1,0 +1,50 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - Paracleto01</title>
+	<script type="importmap"></script>
+	<link rel="stylesheet" href="~/css/Login.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/Paracleto01.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+
+	<div class="app">
+		<div class="login-wrap">
+			<div class="login-box">
+				<div class="login-brand">
+					<div classe="crest">	</div>
+					<div class="name">Colégio Parakleto</div>
+					<div class="sub">Seja Bem-Vindo</div>
+				</div>
+				<form>
+					<div class="field">
+						<label>Utilizador</label>
+						<input name="Nome do Utilizador" placeholder="Nome de Utilizador" required="">
+					</div>
+					<div class="field">
+						<label>Palavra-passe</label>
+						<input name="Palvra passe" type="password" placeholder="Senha" required="">
+					</div>
+					
+					<button class="btn btn-primary btn-block"><a asp-area="" asp-controller="Home" asp-action="Admin">Entrar no painel</a></button>
+				</form>
+				<div class="demo-note">
+					Nota: Caso tenha esquecido a sua senha, digirija-se ao Administrador para a devida recuperação.
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+﻿
+
+			<main class="app-main">
+				<div class="app-topbar">
+					<div>
+						<h2>Alunos</h2>
+						<div class="who">3 alunos matriculados</div>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AddAluno">
+						<button class="btn btn-accent" onclick="#">+ Novo aluno</button>
+					</a>
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Lista de alunos</h3>
+						<div class="panel-toolbar">
+							<input type="text" placeholder="Pesquisar por nome ou turma…" value="" oninput="#">
+						</div>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr><th>Nome</th><th>Turma</th><th>Encarregado</th><th>Contacto</th><th>Ações</th></tr>
+								<tr>
+									<td>Beatriz Fernandes Costa</td>
+									<td>9ºA</td>
+									<td>Manuel Costa</td>
+									<td>+244 923 000 111</td>
+									<td>
+										<div class="actions-cell">
+										  <a class="link-blue">Ver ficha</a>
+										  <a class="link-accent">Editar</a>
+										  <a class="link-red">Eliminar</a>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td>Beatriz Fernandes Costa</td>
+									<td>9ºA</td>
+									<td>Manuel Costa</td>
+									<td>+244 923 000 111</td>
+									<td>
+										<div class="actions-cell">
+										  <a class="link-blue">Ver ficha</a>
+										  <a class="link-accent">Editar</a>
+										  <a class="link-red">Eliminar</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			  
+
+			</main>
+		</div>
+	</div>
+
+
+	<div id="modal-root">
+		<div class="modal-backdrop">
+			<div class="modal">
+				<div class="modal-head">
+					<div>
+						<h3>Inscrever Aluno</h3>
+					</div>
+					<a asp-area="" asp-controller="Home" asp-action="AdmAluno"> 
+					<button class="modal-close" onclick="#">✕</button>
+					</a>
+				</div>
+				<div class="modal-sub">Preencha os dados para inscrever um novo aluno.</div>
+				<form>
+
+					<div class="field">
+						<label>Nome completo</label>
+						<input name="nome" required="" value="" placeholder="Nome do aluno">
+					</div>
+
+					<div class="grid-2">
+						  <div class="field">
+							  <label>Nome do Pai</label>
+							  <input name="encarregado" required="" value="" placeholder="Nome do Pai">
+						  </div>
+						  <div class="field">
+							  <label>Nome da Mãe</label>
+							  <input name="encarregado" required="" value="" placeholder="Nome do Mãe">
+						  </div>
+                    </div>
+
+					<div class="grid-2">
+						  <div class="field">
+							  <label>Data de Nascimento</label>
+							  <input name="data" required="" type="date" value="">
+						  </div>
+						  <div class="field">
+							  	<label>Classe</label>
+								<select name="classe">
+									<option value="">Iniciação</option>
+									<option value="">1ª Classe</option>
+									<option value="">2º Classe</option>
+									<option value="">3ª Classe</option>
+									<option value="">4º Classe</option>
+									<option value="">5ª Classe</option>
+									<option value="">6º Classe</option>
+									<option value="">7ª Classe</option>
+									<option value="">8º Classe</option>
+									<option value="">9ª Classe</option>
+								</select>
+						  </div>
+					</div>
+
+					<div class="grid-2">
+						  <div class="field">
+							  <label>Bilhete de Identidade</label>
+							  <input name="bi" required="" value="" placeholder="Nº do Bilhete de Identidade">
+						  </div>
+						  <div class="field">
+							  <label>Contacto</label>
+							  <input name="contacto" required="" value="" placeholder="Contacto">
+						  </div>
+                    </div>
+
+					<div class="modal-actions">
+						<a asp-area="" asp-controller="Home" asp-action="AdmAluno">
+						  <button type="button" class="btn btn-ghost" onclick="">Cancelar</button>
+						</a>
+						  <button type="submit" class="btn btn-accent">Inscrever aluno</button>
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+

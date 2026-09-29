@@ -1,0 +1,108 @@
+﻿
+
+			<main class="app-main">
+				<div class="app-topbar">
+
+					<div>
+						<h2>Alunos</h2>
+						<div class="who">3 alunos matriculados</div>
+					</div>
+
+					<div class="btn-em2">					
+						<a asp-area="" asp-controller="Home" asp-action="Matricula">
+							<button class="btn btn-outline">+ Matriculas</button>
+						</a>
+						<a asp-area="" asp-controller="Home" asp-action="AddAluno">
+							<button class="btn btn-accent" onclick="#">+ Inscrever Aluno</button>
+						</a>
+					</div>
+										
+				</div>
+
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Lista de alunos inscritos</h3>
+						<div class="panel-toolbar">
+							<input type="text" placeholder="Pesquisar por número de inscrição" value="" oninput="#">
+						</div>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr><th>Nome</th><th>Turma</th><th>Encarregado</th><th>Contacto</th><th>Ações</th></tr>
+								<tr>
+									<td>Beatriz Fernandes Costa</td>
+									<td>9ºA</td>
+									<td>Manuel Costa</td>
+									<td>+244 923 000 111</td>
+									<td>
+										<div class="actions-cell">
+										  <a class="link-blue">Ver ficha</a>
+										  <a class="link-accent" asp-area="" asp-controller="Home" asp-action="Matricula">Matricular</a>
+										  <a class="link-red">Eliminar</a>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td>Beatriz Fernandes Costa</td>
+									<td>9ºA</td>
+									<td>Manuel Costa</td>
+									<td>+244 923 000 111</td>
+									<td>
+										<div class="actions-cell">
+										  <a class="link-blue">Ver ficha</a>
+										  <a class="link-accent" asp-area="" asp-controller="Home" asp-action="Matricula">Matricular</a>
+										  <a class="link-red">Eliminar</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			  
+				<div class="panel">
+					<div class="panel-head">
+						<h3>Lista de alunos Matriculados</h3>
+						<div class="panel-toolbar">
+							<input type="text" placeholder="Pesquisar por nome ou turma…" value="" oninput="#">
+						</div>
+					</div>
+					<form>
+						<table>
+							<tbody>
+								<tr><th>Nome</th><th>Turma</th><th>Encarregado</th><th>Contacto</th><th>Ações</th></tr>
+								<tr>
+									<td>Beatriz Fernandes Costa</td>
+									<td>9ºA</td>
+									<td>Manuel Costa</td>
+									<td>+244 923 000 111</td>
+									<td>
+										<div class="actions-cell">
+										  <a class="link-blue">Ver ficha</a>
+										  <a class="link-accent">Ver Nota</a>
+										  <a class="link-red">Eliminar</a>
+										</div>
+									</td>
+								</tr>
+
+								<tr>
+									<td>Beatriz Fernandes Costa</td>
+									<td>9ºA</td>
+									<td>Manuel Costa</td>
+									<td>+244 923 000 111</td>
+									<td>
+										<div class="actions-cell">
+										  <a class="link-blue">Ver ficha</a>
+										  <a class="link-accent">Ver Nota</a>
+										  <a class="link-red">Eliminar</a>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+			</main>
+		
